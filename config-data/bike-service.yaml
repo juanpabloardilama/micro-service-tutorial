@@ -1,8 +1,5 @@
 server:
   port: 8083
-spring:
-  application:
-    name: bike-service
 logging:
   level:
     org:
@@ -12,7 +9,7 @@ logging:
 spring:
   h2:
     console:
-      enable: true
+      enable: true  
 spring:
   h2:
     console:
