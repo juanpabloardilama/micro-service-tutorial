@@ -1,5 +1,6 @@
 server:
-  port: 8083
+  port: ${PORT:8081}
+message: Producer configuration server is alive!
 logging:
   level:
     org:
@@ -9,14 +10,14 @@ logging:
 spring:
   h2:
     console:
-      enable: true  
+      enable: true
 spring:
   h2:
     console:
       path: /h2
 spring:
   datasource:
-    url: jdbc:h2:mem:bikeService
+    url: jdbc:h2:mem:userAuth
 spring:
   datasource:
     username: sa
