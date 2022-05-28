@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${PORT:8888}
 spring:
   cloud:
     config:
@@ -7,6 +7,6 @@ spring:
         git:
           default-label: config-server
           uri: https://github.com/juanpabloardilama/micro-service-tutorial
-          search-path: config-data
+          search-paths: config-data
   application:
     name: config-service
