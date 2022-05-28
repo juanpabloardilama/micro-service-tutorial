@@ -1,0 +1,11 @@
+server:
+  port: 8761
+message: Producer configuration server is alive!
+logging:
+  level:
+    org:
+      springframework: DEBUG
+eureka:
+  client:
+    fetch-register: false
+    register-with-eureka: false
