@@ -7,6 +7,6 @@ spring:
         git:
           default-label: eureka
           uri: https://github.com/juanpabloardilama/micro-service-tutorial
-          search-paths: config-data
+          search-paths: multiple-instances
   application:
     name: config-service
