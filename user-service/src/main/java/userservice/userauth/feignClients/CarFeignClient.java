@@ -9,7 +9,7 @@ import userservice.userauth.models.Car;
 
 import java.util.List;
 
-@FeignClient(name = "car-service", url = "http://localhost:8082", path = "/car")
+@FeignClient(name = "car-service", path = "/car")
 public interface CarFeignClient {
     @PostMapping
     public Car save(@RequestBody Car ca);
